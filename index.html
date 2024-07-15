@@ -11,20 +11,37 @@
 </head>
 <body>
     <div class="hero">
-        <h1 class="typemaster-keyboard-text">Typemaster Keyboard</h1>
+        <h1 class="typemaster-keyboard-text">Typemaster Keyboardㅤㅤㅤㅤㅤㅤㅤ</h1>
         <!-- other elements -->
     </div>
     
     <style>
         @keyframes typemaster-keyboard-animation {
             0% { transform: translateX(0); }
-            50% { transform: translateX(10px); }
+            50% { transform: translateX(45px); }
             100% { transform: translateX(0); }
         }
     
         .typemaster-keyboard-text {
             animation: typemaster-keyboard-animation 2s infinite;
         }
+        @keyframes image-rotte {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+
+}
+
+.img1, .img2, .img3, .heroimg{
+
+  animation: image-rotte 2s infinite linear;
+}
     </style>
 
     <div class="header">
