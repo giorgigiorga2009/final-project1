@@ -511,3 +511,86 @@
 
 
 
+/* Styles for the toggle button */
+.mode-btn {
+    width: 150px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #E8EFF2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s, color 0.5s;
+    cursor: pointer;
+    color: #162542;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-left: 20px;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #162542;
+    color: #FFFFFF;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.dark-mode .header {
+    background-color: #162542;
+    transition: background-color 0.5s;
+}
+
+body.dark-mode .preOrderbtn1,
+body.dark-mode .preOrderbtn2 {
+    background-color: #FFFFFF;
+    color: #162542;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.dark-mode .preOrderbtn1 p,
+body.dark-mode .preOrderbtn2 p {
+    color: #162542;
+}
+
+body.dark-mode .heroText h1 {
+    color: #FFFFFF;
+    transition: color 0.5s;
+}
+
+body.dark-mode .heroP1,
+body.dark-mode .heroP2,
+body.dark-mode .wrapperText p,
+body.dark-mode .features p,
+body.dark-mode .footer p {
+    color: #E8EFF2;
+    transition: color 0.5s;
+}
+
+body.dark-mode .wrapperText h2,
+body.dark-mode .features h2 {
+    color: #FFFFFF;
+    transition: color 0.5s;
+}
+
+body.dark-mode .preOrderbtn1:hover,
+body.dark-mode .preOrderbtn2:hover {
+    background-color: #162542;
+    color: #FFFFFF;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* Additional transition for button text color */
+.mode-btn {
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.dark-mode .mode-btn {
+    background-color: #FFFFFF;
+    color: #162542;
+    transition: background-color 0.5s, color 0.5s;
+
+}
+
+
+
