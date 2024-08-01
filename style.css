@@ -2,7 +2,6 @@
     font-family: 'Barlow', sans-serif;
 }
 
-
 /* -------------- */
 /* HEADER SECTION */
 /* -------------- */
@@ -45,8 +44,6 @@
     color: #162542;
     transition: 0.2s;
 }
-
-
 
 /* -------------*/
 /* HERO SECTION */
@@ -132,9 +129,6 @@
     display: none;
 }
 
-
-
-
 /* -------------- */
 /* Middle SECTION */
 /* -------------- */
@@ -196,8 +190,6 @@
     color: #7B8BAD;
     margin: 24px;
 }
-
-
 
 /* ---------------- */
 /* Features SECTION */
@@ -278,7 +270,6 @@
     flex-wrap: wrap;
 }
 
-
 /* ---------------- */
 /* Footer SECTION */
 /* ---------------- */
@@ -305,8 +296,7 @@
     color: #7B8BAD;
 }
 
-
-
+/* Media Queries */
 
 @media only screen and (min-width:768px) {
     
@@ -336,9 +326,6 @@
         width: 175px;
     }
 
-
-
-
     .wrapperimages {
         justify-content: center;
         align-items: flex-start;
@@ -355,19 +342,16 @@
         width: 445px;
     }
 
-
     .wrapperText {
         display: flex;
         flex-wrap: nowrap;
         margin-top: 200px;
     }   
 
-    .wrapperText H2, .wrapperText p {
+    .wrapperText h2, .wrapperText p {
         text-align: left;
         margin-left: 40px;   
     }
-
-
 
     .feature1, .feature2, .feature3, .feature4 {
         justify-content: flex-start;
@@ -386,11 +370,8 @@
     }
 }
 
-
 @media only screen and (min-width: 1440px) {
 
-    
-    
     .header {
         justify-content: space-between;
         margin: 55px 165px 76px 165px;
@@ -423,8 +404,6 @@
         right: -120px;
     }
 
-
-
     .wrapper {
         display: flex;
         justify-content: flex-start;
@@ -434,8 +413,6 @@
         margin-top: 80px;
         position: relative;
     }
-
-    
 
     .wrapperText h2, .wrapperText p {
         max-width: 300px;
@@ -502,31 +479,6 @@
         justify-content: center;
         width: 100%;
     }
-
-}
-
-
-    
-
-
-
-
-/* Styles for the toggle button */
-.mode-btn {
-    width: 150px;
-    height: 48px;
-    border-radius: 8px;
-    background-color: #E8EFF2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.5s, color 0.5s;
-    cursor: pointer;
-    color: #162542;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 26px;
-    margin-left: 20px;
 }
 
 /* Dark mode styles */
@@ -589,8 +541,39 @@ body.dark-mode .mode-btn {
     background-color: #FFFFFF;
     color: #162542;
     transition: background-color 0.5s, color 0.5s;
-
 }
 
+/* Button styles shared between Pre-Order Now and Dark Mode buttons */
+.preOrderbtn1, .preOrderbtn2, .mode-btn {
+    width: 150px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s, color 0.2s;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+
+.mode-btn {
+    background-color: #E8EFF2;
+    color: #162542;
+}
+
+.mode-btn:hover {
+    background-color: #162542;
+    color: #FFFFFF;
+}
+.preOrderbtn2 {
+    background-color: #F16718;
+    color: #FFFFFF;
+}
+.preOrderbtn2:hover {
+    background-color: #FF9B62;
+}
 
 
